@@ -1,5 +1,6 @@
 'use strict';
 
+
 const linkedList = require('../linked-list');
 
 
@@ -40,6 +41,8 @@ describe('toString test', () => {
     const ll = new linkedList;
     ll.insert('x');
     ll.insert('y');
-    expect(ll.toString()).toEqual("{ 'y' } -> { 'x' } -> null");
+    let stringList = ll.toString()
+    expect(stringList).toEqual("{ 'y' } -> { 'x' } -> null");
+    // console.log(ll);
   });
 });
