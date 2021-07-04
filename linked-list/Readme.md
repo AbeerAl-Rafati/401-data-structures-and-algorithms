@@ -20,15 +20,15 @@
 - [x] to string
       Arguments: none
       Returns: a string representing all the values in the Linked List, formatted as:
-"{ a } -> { b } -> { c } -> NULL"   -
+"{ a } -> { b } -> { c } -> NULL"     
 
 
 * testing
 
-- [x] Can successfully instantiate an empty linked list
-- [x] Can properly insert into the linked list
-- [x] The head property will properly point to the first node in the linked list
-- [x] Can properly insert multiple nodes into the linked list
-- [x] Will return true when finding a value within the linked list that exists
-- [x] Will return false when searching for a value in the linked list that does not exist
-- [x] Can properly return a collection of all the values that exist in the linked list 
+- [x] Can successfully instantiate an empty linked list  
+- [x] Can properly insert into the linked list  linked list  
+- [x] The head property will properly point to the first node in the linked list  
+- [x] Can properly insert multiple nodes into the linked list  
+- [x] Will return true when finding a value within the linked list that exists  
+- [x] Will return false when searching for a value in the linked list that does not exist  
+- [x] Can properly return a collection of all the values that exist in the linked list   
