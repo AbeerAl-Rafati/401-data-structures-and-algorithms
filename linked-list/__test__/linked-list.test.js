@@ -42,7 +42,7 @@ describe('toString test', () => {
     ll.insert('x');
     ll.insert('y');
     let stringList = ll.toString()
-    expect(stringList).toEqual("{ 'y' } -> { 'x' } -> null");
+    expect(stringList).toEqual("{'y'} -> {'x'} -> null");
     // console.log(ll);
   });
 });

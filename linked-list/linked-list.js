@@ -31,7 +31,7 @@ class SinglyLinkedList {
     let checkingValue = this.head;
     let result = "";
     while (checkingValue) {
-      result = result + `{${checkingValue}} ->`;
+      result = result + `{'${checkingValue.value}'} -> `;
       checkingValue = checkingValue.next;
     }
     // result = JSON.stringify(result)
