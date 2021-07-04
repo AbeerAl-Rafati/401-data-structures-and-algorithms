@@ -28,7 +28,7 @@ describe('include test', () => {
   it('check if list includes a value', () => {
     const ll = new linkedList();
     ll.insert('any value') ?
-      expect(ll.includes('any value')).toBeTruthy() : null
+      expect(ll.includes('any value')).toBeTruthy() : false
     // expect(!ll.includes('any')).toBeFalsy();
   })
 
