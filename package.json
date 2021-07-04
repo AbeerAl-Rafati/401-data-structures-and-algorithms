@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/AbeerAl-Rafati/401-data-structures-and-algorithms/issues"
   },
-  "homepage": "https://github.com/AbeerAl-Rafati/401-data-structures-and-algorithms#readme"
+  "homepage": "https://github.com/AbeerAl-Rafati/401-data-structures-and-algorithms#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
 }
