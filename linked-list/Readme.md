@@ -8,7 +8,7 @@
 - [x] Upon instantiation, an empty Linked List should be created.   
 
 
-* The class should contain the following methods
+* **The class should contain the following methods**
 - [x] insert
       Arguments: value
       Returns: nothing
@@ -23,7 +23,7 @@
 "{ a } -> { b } -> { c } -> NULL"     
 
 
-* testing
+* **testing**
 
 - [x] Can successfully instantiate an empty linked list  
 - [x] Can properly insert into the linked list  linked list  
@@ -32,3 +32,44 @@
 - [x] Will return true when finding a value within the linked list that exists  
 - [x] Will return false when searching for a value in the linked list that does not exist  
 - [x] Can properly return a collection of all the values that exist in the linked list   
+
+
+
+# Code Challenge: Class 06   
+
+
+
+
+## Challenge Summary   
+
+* **The class should contain the following methods**   
+
+- [x] append   
+arguments: new value   
+adds a new node with the given value to the end of the list   
+- [x] insert before   
+arguments: value, new value   
+adds a new node with the given new value immediately before the first node that has the value specified   
+- [x] insert after   
+arguments: value, new value   
+adds a new node with the given new value immediately after the first node that has the value specified   
+
+
+* **testing**   
+ 
+- [x] Can successfully add a node to the end of the linked list  
+- [x] Can successfully add multiple nodes to the end of a linked list  
+- [x] Can successfully insert a node before a node located i the middle of a linked list  
+- [x] Can successfully insert a node before the first node of a linked list  
+- [x] Can successfully insert after a node in the middle of the linked list  
+- [x] Can successfully insert a node after the last node of the linked list  
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+
+
