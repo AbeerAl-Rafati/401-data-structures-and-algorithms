@@ -1,13 +1,13 @@
 'use strict';
 
 
-const linkedList01 = require('../linked-list01');
+const linkedList06 = require('../linked-list-class06');
 
 
 
-describe('linked-list01', () => {
+describe('linked-list06', () => {
   it('initial test', () => {
-    const ll = new linkedList01();
+    const ll = new linkedList06();
     expect(ll).toBeDefined();
     expect(ll.head).toBeNull();
   });
