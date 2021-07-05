@@ -34,14 +34,14 @@ class SinglyLinkedList07 {
 }
 
 
-// let test = new SinglyLinkedList07();
-// test.insert(1)
-// test.insert(0)
-// test.insert(2)
-// test.insert(3)
-// test.insert(2)
-// console.log(test);
-// console.log(test.findKthFromTheEnd(1));
+let test = new SinglyLinkedList07();
+test.insert(1)
+test.insert(0)
+test.insert(2)
+test.insert(3)
+test.insert(2)
+console.log(test);
+console.log(test.findKthFromTheEnd(1));
 
 
 module.exports = SinglyLinkedList07;
