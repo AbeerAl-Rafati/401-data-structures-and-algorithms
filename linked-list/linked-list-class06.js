@@ -3,7 +3,7 @@
 const Node = require('./node');
 
 
-class SinglyLinkedList01 {
+class SinglyLinkedList06 {
   constructor() {
     this.head = null;
   }
@@ -74,4 +74,4 @@ class SinglyLinkedList01 {
 }
 
 
-module.exports = SinglyLinkedList01;
+module.exports = SinglyLinkedList06;
