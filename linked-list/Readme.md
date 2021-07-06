@@ -33,7 +33,7 @@
 - [x] Will return false when searching for a value in the linked list that does not exist  
 - [x] Can properly return a collection of all the values that exist in the linked list   
 
-
+--------------------
 
 # Code Challenge: Class 06   
 
@@ -73,3 +73,22 @@ adds a new node with the given new value immediately after the first node that h
 <!-- Show how to run your code, and examples of it in action -->
 
 
+
+-------------------------
+# Code Challenge: Class 07
+
+# linked-list-kthfrom the end 
+- [x] kth from end
+- [x] Where k is greater than the length of the linked list
+- [x] Where k and the length of the list are the same
+- [x] Where k is not a positive integer
+- [x] Where the linked list is of a size 1  
+## Whiteboard Process
+![kth](./assets/challeng7.PNG)
+
+## Approach & Efficiency
+
+try to use only one loop inside the function 
+
+## Solution
+run `npm test` to show the result
