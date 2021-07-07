@@ -34,7 +34,8 @@ class SinglyLinkedList08 {
       list1 == list1 ? list1.next : list1
       list2 == list2 ? list2.next : list2
     }
-
+    prv.next = null
+    return list3;
   }
 
 }
