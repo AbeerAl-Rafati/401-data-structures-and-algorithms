@@ -6,6 +6,7 @@ const Node = require('./node');
 class SinglyLinkedList06 {
   constructor() {
     this.head = null;
+
   }
 
 
@@ -14,12 +15,14 @@ class SinglyLinkedList06 {
     const newNode = new Node(value);
     if (!this.head) {
       this.head = newNode;
+
     } else {
       let thisNode = this.head;
       while (thisNode.next) {
         thisNode = thisNode.next;
       }
       thisNode.next = newNode;
+
     }
 
   }
@@ -28,50 +31,84 @@ class SinglyLinkedList06 {
 
 
   insertBefore(value, newValue) {
+
+
     if (!this.head) {
-      this.head = new Node(newValue);
+      let node = new Node(value);
+      this.head = node;
+
     } else {
-      let currentNode = this.head;
-      let afterNode = null;
-      while (currentNode.next) {
-        if (currentNode.next.value === value) {
-          afterNode = currentNode.next;
-          let newNode = new Node(newValue);
-          newNode.next = afterNode;
-          currentNode.next = newNode;
-          return;
-        }
-        currentNode = currentNode.next;
+      let newNode = new Node(newValue)
+
+      if (this.head === value) {
+        newNode.next = this.head
+
+        this.head = newNode
+        return this.head
       }
+      else {
+        let pointer = this.head;
+        while (pointer) {
+
+          if (pointer.next.value === value) {
+            newNode.next = pointer.next
+            pointer.next = newNode;
+            return;
+          } else {
+            pointer = pointer.next
+
+          }
+        }
+      }
+
     }
-    return this;
 
   }
+
 
 
 
 
   insertAfter(value, newValue) {
-    let node = new Node(value);
-    if (!this.head) {
-      this.head = node;
-    }
-    let currentNode = this.head;
-    let afterNode = null;
-    while (currentNode) {
-      if (currentNode.value === value) {
-        afterNode = currentNode.next;
-        let newNode = new Node(newValue);
-        newNode.next = afterNode;
-        currentNode.next = newNode;
-        return;
-      }
-      currentNode = currentNode.next;
-    }
-    return this;
 
+    if (!this.head) {
+      let node = new Node(value);
+      this.head = node;
+
+    } else {
+      let newNode = new Node(newValue)
+
+      if (this.head === value) {
+        this.head.next = newNode
+
+
+        return this.head.next
+      }
+      else {
+        let pointer = this.head;
+        while (pointer) {
+
+          if (pointer.next.value === value) {
+            pointer.next.next = newNode
+            return;
+          } else {
+            pointer = pointer.next
+
+          }
+        }
+      }
+
+    }
   }
+
 }
 
+
+let test6 = new SinglyLinkedList06();
+test6.append(1)
+test6.append(3)
+test6.insertBefore(3, 2)
+// test6.insertAfter(3)
+console.log(test6);
 
 module.exports = SinglyLinkedList06;
