@@ -66,6 +66,8 @@ adds a new node with the given new value immediately after the first node that h
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 ![insertins](./assets/challeng6.PNG)
+![insertins](./assets/class6test.PNG)
+
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 find a solution pass the test xD
@@ -85,6 +87,7 @@ run `npm test` to show the result
 - [x] Where the linked list is of a size 1  
 ## Whiteboard Process
 ![kth](./assets/challeng7.PNG)
+
 
 ## Approach & Efficiency
 
