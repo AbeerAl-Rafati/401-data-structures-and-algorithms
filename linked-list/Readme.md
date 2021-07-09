@@ -65,13 +65,15 @@ adds a new node with the given new value immediately after the first node that h
 - [x] Can successfully insert a node after the last node of the linked list  
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
+![insertins](./assets/challeng6.PNG)
+![insertins](./assets/class6test.PNG)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-
+find a solution pass the test xD
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
-
+run `npm test` to show the result
 
 
 -------------------------
