@@ -94,3 +94,25 @@ try to use only one loop inside the function
 
 ## Solution
 run `npm test` to show the result
+
+
+
+-------------------------------------------
+
+
+
+# Code Challenge: Class 08
+
+# zip two linked lists
+- [x] Write a function called zip lists
+- [x] Arguments: 2 linked lists
+- [x] Return: Linked List, zipped as noted below
+- [x] Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. 
+## Whiteboard Process
+![zip](./assets/challeng8.PNG)
+
+## Approach & Efficiency
+try to minimize the space complixity as i can 
+
+## Solution
+run `npm test` to show the result
