@@ -44,7 +44,6 @@ class SinglyLinkedList06 {
         newNode.next = this.head
 
         this.head = newNode
-        return this.head
       }
       else {
         let pointer = this.head;
@@ -81,8 +80,6 @@ class SinglyLinkedList06 {
       if (this.head === value) {
         this.head.next = newNode
 
-
-        return this.head.next
       }
       else {
         let pointer = this.head;
