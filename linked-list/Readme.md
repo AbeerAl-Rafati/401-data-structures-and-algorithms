@@ -65,11 +65,30 @@ adds a new node with the given new value immediately after the first node that h
 - [x] Can successfully insert a node after the last node of the linked list  
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-
+![insertins](./assets/challeng6.PNG)
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-
+find a solution pass the test xD
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
+run `npm test` to show the result
 
 
+-------------------------
+# Code Challenge: Class 07
+
+# linked-list-kthfrom the end 
+- [x] kth from end
+- [x] Where k is greater than the length of the linked list
+- [x] Where k and the length of the list are the same
+- [x] Where k is not a positive integer
+- [x] Where the linked list is of a size 1  
+## Whiteboard Process
+![kth](./assets/challeng7.PNG)
+
+## Approach & Efficiency
+
+try to use only one loop inside the function 
+
+## Solution
+run `npm test` to show the result
