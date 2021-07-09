@@ -1,7 +1,7 @@
 'use strict';
 
 
-const linkedList = require('../linked-list-class05');
+const linkedList = require('../linked-list');
 
 
 
