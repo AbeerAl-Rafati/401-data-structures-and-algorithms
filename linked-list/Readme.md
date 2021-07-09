@@ -88,7 +88,6 @@ run `npm test` to show the result
 ## Whiteboard Process
 ![kth](./assets/challeng7.PNG)
 
-
 ## Approach & Efficiency
 
 try to use only one loop inside the function 
