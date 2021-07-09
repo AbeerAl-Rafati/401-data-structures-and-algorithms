@@ -1,13 +1,13 @@
 'use strict';
 
 
-const linkedList08 = require('../linked-list-class08');
+let { SinglyLinkedList08, zip } = require('../linked-list-class08');
 
 
 
 describe('linked-list08', () => {
   it('initial test', () => {
-    const ll = new linkedList08();
+    const ll = new SinglyLinkedList08();
     expect(ll).toBeDefined();
     expect(ll.head).toBeNull();
   });
@@ -15,24 +15,23 @@ describe('linked-list08', () => {
 
 
   it('test zip ', () => {
-    let ll = new linkedList08();
-    let ll2 = new linkedList08();
-    let ll3 = new linkedList08();
-
-    ll.insert('1');
-    ll.insert('3');
-    ll.insert('5');
+    let ll = new SinglyLinkedList08();
+    let ll2 = new SinglyLinkedList08();
 
 
-    ll2.insert('2');
-    ll2.insert('4');
-    ll2.insert('6');
+    ll.insert(1);
+    ll.insert(3);
+    ll.insert(5);
 
 
-    ll3.zip(ll, ll2);
+    ll2.insert(2);
+    ll2.insert(4);
+    ll2.insert(6);
 
-    expect(ll3.head.value).toEqual('1');
-    expect(ll3.head.next.value).toEqual('2');
+
+    expect(zip(ll2, ll).head.value).toEqual(1);
+    expect(zip(ll2, ll).head.next.value).toEqual(2);
+    expect(zip(ll2, ll).head.next.next.value).toEqual(3);
 
 
 
