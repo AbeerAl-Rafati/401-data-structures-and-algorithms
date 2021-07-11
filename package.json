@@ -19,5 +19,8 @@
   "homepage": "https://github.com/AbeerAl-Rafati/401-data-structures-and-algorithms#readme",
   "devDependencies": {
     "jest": "^27.0.6"
+  },
+  "dependencies": {
+    "supertest": "^6.1.3"
   }
 }
