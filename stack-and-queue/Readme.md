@@ -37,3 +37,19 @@ run `npm test` to show the result
 
 ![insertins](./assets/challeng10.PNG)
 
+
+
+# Code Challenge: Class 11
+## Psudoqueue
+ 
+add , pop , value to queue according FIFO  approach
+
+## Approach & Efficiency
+try to do that by a simplest way
+
+## Solution
+run `npm test` to show the result
+
+## whitebord
+
+![insertins](./assets/challeng11.PNG)
