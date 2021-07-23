@@ -1,16 +1,18 @@
 # Code Challenge: Class 10
+
 ## Stacks and Queues
+
 stack look like a palette of pancake , firt add last pop , last add first pop
 
-queue look like a queue , how comes first will pop first , how comes at the end will pop last one  
-
+queue look like a queue , how comes first will pop first , how comes at the end will pop last one
 
 ## Challenge
-add , pop , return peek and check if stack or queue is empty   -->
+
+add , pop , return peek and check if stack or queue is empty -->
 
 ## Approach & Efficiency
-tried to create o(1) functions   
 
+tried to create o(1) functions
 
 ## test
 
@@ -31,25 +33,45 @@ tried to create o(1) functions
 - [x] Calling dequeue or peek on empty queue raises exception
 
 ## Solution
+
 run `npm test` to show the result
 
 ## whitebord
 
 ![insertins](./assets/challeng10.PNG)
 
-
-
 # Code Challenge: Class 11
+
 ## Psudoqueue
- 
-add , pop , value to queue according FIFO  approach
+
+add , pop , value to queue according FIFO approach
 
 ## Approach & Efficiency
+
 try to do that by a simplest way
 
 ## Solution
+
 run `npm test` to show the result
 
 ## whitebord
 
 ![insertins](./assets/challeng11.PNG)
+
+# Code Challenge: Class 12
+
+## Animal shelter
+
+enqueue and dequeue a dog and cat in queue
+
+## Approach & Efficiency
+
+try to do that by a simplest way
+
+## Solution
+
+run `npm test` to show the result
+
+## whitebord
+
+![insertins](./assets/challenge12.PNG)
