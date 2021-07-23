@@ -75,3 +75,21 @@ run `npm test` to show the result
 ## whitebord
 
 ![insertins](./assets/challenge12.PNG)
+
+# Code Challenge: Class 13
+
+## brackets checker
+
+check if contains brackets return true otherwise return false
+
+## Approach & Efficiency
+
+try to do that by a simplest way
+
+## Solution
+
+run `npm test` to show the result
+
+## whitebord
+
+![insertins](./assets/challenge13.PNG)
