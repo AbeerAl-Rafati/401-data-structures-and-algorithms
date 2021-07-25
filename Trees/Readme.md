@@ -46,4 +46,4 @@ tried to simple solution
 
 ## whiteboard
 
-![max](img/max.PNG)
+![max](img/maxx.PNG)
