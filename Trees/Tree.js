@@ -53,6 +53,33 @@ class BT {
 
     return arr;
   }
+
+  treeMax() {
+    if (!this.root) {
+      return null;
+    }
+    let result = 0;
+    let max = (node, max) => {
+      if (node.value > max) max = node.value;
+      return max;
+    };
+
+    let traverse = (node) => {
+      if (node.left) {
+        result = max(node.left, result);
+        traverse(node.left);
+      } else {
+        result = max(node, result);
+        if (node.right) {
+          result = max(node.right, result);
+          traverse(node.right);
+        }
+      }
+      traverse(this.root);
+
+      return result;
+    };
+  }
 }
 
 class BST {
