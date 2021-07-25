@@ -107,4 +107,12 @@ class BST {
   }
 }
 
-module.exports = { BT, BST };
+module.exports = { Node, BT, BST };
+
+let bts = new BST();
+
+bts.add(7);
+bts.add(10);
+bts.add(1);
+
+console.log(bts);
