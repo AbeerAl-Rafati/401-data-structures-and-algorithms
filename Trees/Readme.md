@@ -28,3 +28,22 @@
 
 ![bt](img/bt.PNG)
 ![bst](img/bst.PNG)
+
+# Code Challenge: Class 16
+
+## tree-max
+
+find the max value in tree
+
+## Challenge
+
+- [x] find maximum value
+- [ ] testing
+
+## Approach & Efficiency
+
+tried to simple solution
+
+## whiteboard
+
+![max](img/max.PNG)
