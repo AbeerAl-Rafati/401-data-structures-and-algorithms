@@ -80,6 +80,26 @@ class BT {
       return result;
     };
   }
+
+  contains(value) {
+    if (!this.root) {
+      return false;
+    }
+
+    let root = this.root;
+    let found = false;
+
+    while (root && !found) {
+      if (value < root.left) {
+        root = root.left;
+      } else if (value > root.right) {
+        root = root.right;
+      } else {
+        return true;
+      }
+    }
+    return false;
+  }
 }
 
 class BST {

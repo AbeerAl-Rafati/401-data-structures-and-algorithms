@@ -66,3 +66,22 @@ tried to simple solution
 ## whiteboard
 
 ![max](img/challenge17.PNG)
+
+# Code Challenge: Class 18
+
+## fizzBuzzTree
+
+fizzBuzzTree challenge
+
+## Challenge
+
+- [x] fizzBuzzTree
+- [ ] testing
+
+## Approach & Efficiency
+
+tried to simple solution
+
+## whiteboard
+
+![max](img/fizzbuzz.PNG)
