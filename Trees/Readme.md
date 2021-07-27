@@ -47,3 +47,22 @@ tried to simple solution
 ## whiteboard
 
 ![max](img/maxx.PNG)
+
+# Code Challenge: Class 17
+
+## Bred tree first
+
+find the max value in tree
+
+## Challenge
+
+- [x] bread first order
+- [ ] testing
+
+## Approach & Efficiency
+
+tried to simple solution
+
+## whiteboard
+
+![max](img/challenge17.PNG)
