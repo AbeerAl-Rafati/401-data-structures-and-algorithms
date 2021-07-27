@@ -47,3 +47,22 @@ tried to simple solution
 ## whiteboard
 
 ![max](img/maxx.PNG)
+
+# Code Challenge: Class 17
+
+## Breadth tree first
+
+Breadth tree first oreder
+
+## Challenge
+
+- [x] bread first order
+- [ ] testing
+
+## Approach & Efficiency
+
+tried to simple solution
+
+## whiteboard
+
+![max](img/challenge17.PNG)
