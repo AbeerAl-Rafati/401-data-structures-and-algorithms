@@ -26,8 +26,8 @@
 
 ## whiteboard
 
-![bt](img/bt.PNG)
-![bst](img/bst.PNG)
+![bt](img/bt1.PNG)
+![bst](img/bst1.PNG)
 
 # Code Challenge: Class 16
 
