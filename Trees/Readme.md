@@ -50,9 +50,9 @@ tried to simple solution
 
 # Code Challenge: Class 17
 
-## Bred tree first
+## Breadth tree first
 
-find the max value in tree
+Breadth tree first oreder
 
 ## Challenge
 
