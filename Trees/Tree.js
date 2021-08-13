@@ -92,6 +92,23 @@ class BT {
     }
     return false;
   }
+
+
+
+  BFS=()=>{
+    let visitedData=[], queue = [] ,pointer = this.root;
+    queue.push(pointer);
+
+    while(queue.length){
+//            console.log(queue)
+        pointer = queue.shift();
+
+        visitedData.push(pointer.value);
+        if (pointer.left){queue.push(pointer.left)}
+        if (pointer.right){queue.push(pointer.right)}
+    }
+  return visitedData;
+} 
 }
 
 class BST {
@@ -159,12 +176,23 @@ class BST {
   };
 }
 
+
 module.exports = { Node, BT, BST };
 
 let bts = new BST();
 
-bts.add(7);
-bts.add(10);
-bts.add(1);
+bts.add(15);
+bts.add(5);
+bts.add(3);
+bts.add(60);
+bts.add(35);
+bts.add(20);
 
-console.log(bts);
+// console.log(bts);
+
+
+
+// console.log(result);
+// console.log(result.root);
+// console.log(result.root.left);
+// console.log(result.root.right);

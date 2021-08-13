@@ -1,31 +1,42 @@
-let fizzBuzzTree = (tree) => {
-  if (!tree.root) return null;
+const { BT, Node } = require("./Tree");
 
-  let replace = (node) => {
-    if (node.value) {
-      if (!node.value % 3 === 0 || !node.value % 5 === 0) {
-        node.value = `"${node.value}"`;
-      } else if (node.value % 3 === 0 && node.value % 5 === 0) {
-        node.value = "fizzbuzz";
+function fizzBuzzTree(tree) {
+  let node = tree.root;
+  let stack = [];
+
+  if (!node) {
+    return null;
+  } else {
+    stack.push(node);
+
+    while (stack.length) {
+      node = stack.pop();
+
+      if (node.value % 15 === 0) {
+        node.value = "FizzBuzz";
       } else if (node.value % 3 === 0) {
-        node.value = "fizz";
+        node.value = "Fizz";
       } else if (node.value % 5 === 0) {
-        node.value = "buzz";
+        node.value = "Buzz";
+      } else {
+        node.value = node.value.toString();
       }
+      if (node.left) stack.push(node.left);
+      if (node.right) stack.push(node.right);
     }
-  };
-
-  if (node.left) {
-    replace(node.left);
   }
-  if (node.right) {
-    replace(node.right);
-  }
-
-  replace(tree.root);
   return tree;
-};
+}
 
-module.exports = {
-  fizzBuzzTree,
-};
+let tree = new BT();
+
+tree.root = new Node(60);
+tree.root.right= new Node(72);
+tree.root.left = new Node(51);
+tree.root.left.right= new Node(55);
+tree.root.left.left= new Node(40);
+tree.root.right.right = new Node(91);
+tree.root.right.left=new Node(69)
+
+
+console.log(fizzBuzzTree(tree));
