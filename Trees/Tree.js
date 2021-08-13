@@ -54,31 +54,23 @@ class BT {
     return arr;
   }
 
-  treeMax() {
-    if (!this.root) {
+  maxBT(node) {
+    if (!node) {
       return null;
-    }
-    let result = 0;
-    let max = (node, max) => {
-      if (node.value > max) max = node.value;
-      return max;
-    };
+    } else {
+      let pointer = node.value;
 
-    let traverse = (node) => {
-      if (node.left) {
-        result = max(node.left, result);
-        traverse(node.left);
-      } else {
-        result = max(node, result);
-        if (node.right) {
-          result = max(node.right, result);
-          traverse(node.right);
-        }
+      let leftMax = this.maxBT(node.left);
+      let rightMax = this.maxBT(node.right);
+
+      if (leftMax > pointer) {
+        pointer = leftMax;
       }
-      traverse(this.root);
-
-      return result;
-    };
+      if (rightMax > pointer) {
+        pointer = rightMax;
+      }
+      return pointer;
+    }
   }
 
   contains(value) {
@@ -152,6 +144,19 @@ class BST {
     }
     return false;
   }
+
+  maxBST = () => {
+    if (!this.root) {
+      return null;
+    } else {
+      let pointer = this.root;
+
+      while (pointer.right !== null) {
+        pointer = pointer.right;
+      }
+      return pointer.value;
+    }
+  };
 }
 
 module.exports = { Node, BT, BST };
