@@ -4,6 +4,7 @@ class Queue {
   constructor() {
     this.head = null;
     this.back = null;
+    this.size=0
   }
 
   enqueue(value) {
@@ -13,9 +14,11 @@ class Queue {
     if (!this.head) {
       this.head = node;
       this.back = node;
+      this.size++
     } else {
       this.back.next = node;
       this.back = node;
+      this.size++
     }
 
 
@@ -26,6 +29,7 @@ class Queue {
 
     let pointer = this.head;
     this.head = this.head.next;
+    this.size--
     return pointer.value;
   }
 
