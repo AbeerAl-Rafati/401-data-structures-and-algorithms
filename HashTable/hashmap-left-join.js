@@ -1,25 +1,25 @@
 const HashTable = require("./hashImplement");
 
 function leftJoin(map1, map2) {
+  let arr = [];
 
-let arr = []
+  for (let i = 0; i < map1.keyMap.length; i++) {
+    if (map2.contains(map1.keyMap[i])) {
+      let key = map1.keyMap[i];
 
- for(let i = 0 ; i < map1.keyMap.length; i++){
-
-  if (map1.keyMap[i] !== undefined){
-    let key = (Object.keys(map1.keyMap[i][key])[0])
-
-    arr.push(key)
-    arr.push(map1.keyMap[i][key])
-
-    if(map2.contains(key)){
-      arr.push(map2.get(key))
-    }else{
-      arr.push(null)
+      arr[arr.length] = [
+        map1.keyMap[i],
+        map1.get(key).value,
+        map2.get(key).value,
+      ];
+    } else {
+      let key = map1.keyMap[i];
+      arr[arr.length] = [map1.keyMap[i], map1.get(key).value, "Null"];
     }
-
+    return arr;
   }
- }
 
- return arr;
+  return arr;
 }
+
+module.exports = leftJoin;
